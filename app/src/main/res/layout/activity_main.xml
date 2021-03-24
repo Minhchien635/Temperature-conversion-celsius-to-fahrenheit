@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_ninjas"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onChangeRadio"
+            android:text="Celsius" />
+
+        <RadioButton
+            android:id="@+id/radio_pirates"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350px"
+            android:layout_toRightOf="@+id/radio_ninjas"
+            android:onClick="onChangeRadio"
+            android:text="Fahrenheit" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="⁰C"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="=>" />
+
+    <EditText
+        android:id="@+id/plain_text_output"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="680px"
+        android:layout_marginTop="50dp"
+        android:hint="⁰F"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="convertButton"
+        android:text="CONVERT" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="History:" />
+
+    <ListView
+        android:id="@+id/listproduct"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="185dp"
+        android:layout_weight="1" />
+</RelativeLayout>
