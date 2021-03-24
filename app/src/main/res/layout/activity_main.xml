@@ -72,6 +72,6 @@
         android:id="@+id/listproduct"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:layout_marginTop="185dp"
+        android:layout_marginTop="180dp"
         android:layout_weight="1" />
 </RelativeLayout>
