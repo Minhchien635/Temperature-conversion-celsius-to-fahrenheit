@@ -65,7 +65,17 @@ public class MainActivity extends AppCompatActivity {
             setTextResult(radio, x);
             arrA.setNotifyOnChange(true);
             arrA.notifyDataSetChanged();
+        }else {
+            String message = "Please enter the correct format number";
+            int duration = Snackbar.LENGTH_SHORT;
+
+            showSnackbar(view, message, duration);
         }
+    }
+
+    public void showSnackbar(View view, String message, int duration)
+    {
+        Snackbar.make(view, message, duration).show();
     }
 
     public void setTextResult(View radio, float valIp) {
